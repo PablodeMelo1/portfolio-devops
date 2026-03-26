@@ -20,6 +20,10 @@ portfolio-template/
 └── ejercicio-integrador.md    # Consigna completa de la Fase 1
 ```
 
+## Preview
+
+![Portfolio template](screenshot.png)
+
 ## Correr localmente
 
 ### Desarrollo — edición en tiempo real (recomendado)
