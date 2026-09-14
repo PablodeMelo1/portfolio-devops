@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pablo de Melo — Portfolio DevOps</title>
+  <title>Pablo de Melo — Software Developer</title>
+  <meta name="description" content="Portfolio de Pablo de Melo, Software Developer en Telaeris. Automatización de pruebas, arquitectura de software y desarrollo de productos web." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
@@ -12,11 +13,12 @@
 
   <!-- NAV -->
   <nav>
-    <a href="#hero" class="nav-logo">PablodeMelo</a>
+    <a href="#hero" class="nav-logo">Pablo de Melo</a>
     <ul class="nav-links">
-      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experiencia</a></li>
+      <li><a href="#skills">Habilidades</a></li>
       <li><a href="#projects">Proyectos</a></li>
-      <li><a href="#education">Educación</a></li>
+      <li><a href="#education">Formación</a></li>
       <li><a href="#contact">Contacto</a></li>
     </ul>
     <button id="theme-toggle" class="theme-toggle" aria-label="Cambiar tema">☀</button>
@@ -26,19 +28,32 @@
   <section id="hero">
     <p class="hero-tag">👋 Hola, soy</p>
     <h1 class="hero-name">Pablo <span>de Melo</span></h1>
-    <p class="hero-role">DevOps Engineer</p>
+    <p class="hero-role">Software Developer en Telaeris</p>
     <p class="hero-desc">
-      Soy una persona apasionada por el mundo de la tecnología y, especialmente, por utilizar el software para resolver necesidades reales. Me interesa el desarrollo de sistemas de punta a punta: entender el problema, relevar necesidades, diseñar una solución, desarrollarla, probarla y llevarla a producción.
-
-Mi enfoque va más allá de programar una funcionalidad; me atrae la ingeniería de software en su conjunto, la arquitectura, la automatización, la calidad y la mejora continua de los procesos de desarrollo.
-
-Disfruto especialmente enfrentar problemas, entender cómo funcionan los sistemas y encontrar soluciones simples, mantenibles y eficientes que generen un impacto real.
-      Estudiante de DevOps apasionado por la automatización, la infraestructura como código
-      y las prácticas de entrega continua. Actualmente completando el Certificado DevOps en ORT ATI.
+      Desarrollo software para resolver necesidades reales. Actualmente trabajo en
+      automatización de pruebas con Playwright y TypeScript. Me interesan la arquitectura
+      de software, las buenas prácticas y el desarrollo de sistemas de punta a punta:
+      desde entender el problema hasta llevar una solución a producción.
     </p>
     <div class="hero-cta">
       <a href="#projects" class="btn btn-primary">Ver proyectos</a>
       <a href="#contact" class="btn btn-outline">Contacto</a>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <p class="section-label">// experiencia</p>
+    <h2 class="section-title">Experiencia profesional</h2>
+    <div class="experience-card">
+      <p class="experience-company">Telaeris</p>
+      <h3 class="experience-role">Software Developer</h3>
+      <p class="experience-desc">
+        Trabajo en automatización de pruebas con Playwright y TypeScript, aplicando
+        buenas prácticas de desarrollo y criterios de arquitectura de software.
+      </p>
     </div>
   </section>
 
@@ -53,73 +68,52 @@ Disfruto especialmente enfrentar problemas, entender cómo funcionan los sistema
       <div class="skill-card">
         <div class="skill-card-title">
           <span class="skill-dot"></span>
-          Control de versiones
+          Testing y calidad
         </div>
         <ul class="skill-list">
-          <!-- TODO: editá los tags con tus herramientas reales -->
+          <li class="skill-tag">Playwright</li>
+          <li class="skill-tag">TypeScript</li>
+          <li class="skill-tag">Vitest</li>
+          <li class="skill-tag">Jest</li>
+        </ul>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-card-title">
+          <span class="skill-dot"></span>
+          Frontend
+        </div>
+        <ul class="skill-list">
+          <li class="skill-tag">HTML</li>
+          <li class="skill-tag">CSS</li>
+          <li class="skill-tag">JavaScript</li>
+          <li class="skill-tag">React</li>
+          <li class="skill-tag">Next.js</li>
+          <li class="skill-tag">Tailwind CSS</li>
+        </ul>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-card-title">
+          <span class="skill-dot"></span>
+          Backend y datos
+        </div>
+        <ul class="skill-list">
+          <li class="skill-tag">Node.js</li>
+          <li class="skill-tag">Express</li>
+          <li class="skill-tag">MongoDB</li>
+        </ul>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-card-title">
+          <span class="skill-dot"></span>
+          Herramientas
+        </div>
+        <ul class="skill-list">
           <li class="skill-tag">Git</li>
           <li class="skill-tag">GitHub</li>
-          <li class="skill-tag">GitLab</li>
-        </ul>
-      </div>
-
-      <div class="skill-card">
-        <div class="skill-card-title">
-          <span class="skill-dot"></span>
-          CI/CD
-        </div>
-        <ul class="skill-list">
-          <li class="skill-tag">GitHub Actions</li>
-          <li class="skill-tag">Jenkins</li>
-          <li class="skill-tag">ArgoCD</li>
-        </ul>
-      </div>
-
-      <div class="skill-card">
-        <div class="skill-card-title">
-          <span class="skill-dot"></span>
-          Contenedores
-        </div>
-        <ul class="skill-list">
           <li class="skill-tag">Docker</li>
-          <li class="skill-tag">Kubernetes</li>
-          <li class="skill-tag">Helm</li>
-        </ul>
-      </div>
-
-      <div class="skill-card">
-        <div class="skill-card-title">
-          <span class="skill-dot"></span>
-          Cloud & IaC
-        </div>
-        <ul class="skill-list">
-          <li class="skill-tag">AWS</li>
-          <li class="skill-tag">Terraform</li>
-          <li class="skill-tag">Ansible</li>
-        </ul>
-      </div>
-
-      <div class="skill-card">
-        <div class="skill-card-title">
-          <span class="skill-dot"></span>
-          Scripting
-        </div>
-        <ul class="skill-list">
-          <li class="skill-tag">Bash</li>
-          <li class="skill-tag">Python</li>
-          <li class="skill-tag">YAML</li>
-        </ul>
-      </div>
-
-      <div class="skill-card">
-        <div class="skill-card-title">
-          <span class="skill-dot"></span>
-          Observabilidad
-        </div>
-        <ul class="skill-list">
-          <li class="skill-tag">Prometheus</li>
-          <li class="skill-tag">Grafana</li>
-          <li class="skill-tag">ELK Stack</li>
         </ul>
       </div>
 
@@ -136,51 +130,35 @@ Disfruto especialmente enfrentar problemas, entender cómo funcionan los sistema
 
       <div class="project-card">
         <div class="project-header">
-          <span class="project-name">Pipeline CI/CD</span>
-          <!-- TODO: reemplazá # con el link real del proyecto -->
-          <a href="#" class="project-link">↗ ver repo</a>
+          <span class="project-name">Blonda Stickers</span>
+          <a href="https://blonda-stickers.vercel.app/" class="project-link" target="_blank" rel="noopener noreferrer">↗ ver sitio</a>
         </div>
         <p class="project-desc">
-          <!-- TODO: describí tu proyecto real -->
-          Pipeline automatizado con GitHub Actions que ejecuta tests, build de imagen Docker
-          y deploy a un cluster de Kubernetes en cada push a main.
+          Plataforma de comercio electrónico para productos personalizados.
+          Reúne catálogo, personalización, carrito, pedidos y herramientas de administración
+          para centralizar la operación del emprendimiento.
         </p>
         <div class="project-tags">
-          <span class="project-tag">GitHub Actions</span>
-          <span class="project-tag">Docker</span>
-          <span class="project-tag">Kubernetes</span>
+          <span class="project-tag">Next.js</span>
+          <span class="project-tag">TypeScript</span>
+          <span class="project-tag">Node.js</span>
+          <span class="project-tag">MongoDB</span>
         </div>
       </div>
 
       <div class="project-card">
         <div class="project-header">
-          <span class="project-name">Infraestructura con Terraform</span>
-          <a href="#" class="project-link">↗ ver repo</a>
+          <span class="project-name">Portfolio personal</span>
+          <a href="https://github.com/PablodeMelo1/portfolio-devops" class="project-link" target="_blank" rel="noopener noreferrer">↗ ver repo</a>
         </div>
         <p class="project-desc">
-          Definición de infraestructura en AWS usando Terraform: VPC, EC2, RDS y S3
-          con gestión de estado remoto en S3 + DynamoDB.
+          Portfolio personal desarrollado con HTML, CSS y JavaScript, con cambio de tema,
+          pruebas unitarias y una imagen Docker para ejecutarlo con nginx.
         </p>
         <div class="project-tags">
-          <span class="project-tag">Terraform</span>
-          <span class="project-tag">AWS</span>
-          <span class="project-tag">IaC</span>
-        </div>
-      </div>
-
-      <div class="project-card">
-        <div class="project-header">
-          <span class="project-name">Portfolio DevOps</span>
-          <a href="#" class="project-link">↗ ver repo</a>
-        </div>
-        <p class="project-desc">
-          Este mismo portfolio: publicado con GitHub Pages y GitHub Actions.
-          Deploy automático en cada push a main.
-        </p>
-        <div class="project-tags">
-          <span class="project-tag">GitHub Pages</span>
-          <span class="project-tag">GitHub Actions</span>
           <span class="project-tag">HTML/CSS</span>
+          <span class="project-tag">JavaScript</span>
+          <span class="project-tag">Docker</span>
         </div>
       </div>
 
@@ -191,28 +169,16 @@ Disfruto especialmente enfrentar problemas, entender cómo funcionan los sistema
 
   <!-- EDUCATION -->
   <section id="education">
-    <p class="section-label">// educación</p>
+    <p class="section-label">// formación</p>
     <h2 class="section-title">Formación</h2>
     <div class="edu-list">
-
       <div class="edu-item">
-        <span class="edu-year">2024 — 2025</span>
+        <span class="edu-year">Último semestre</span>
         <div>
-          <p class="edu-title">Certificado DevOps</p>
-          <!-- TODO: completá con tu institución real -->
-          <p class="edu-institution">ORT ATI — Escuela de Tecnología</p>
+          <p class="edu-title">Analista en Tecnologías de la Información</p>
+          <p class="edu-institution">Universidad ORT Uruguay · En curso</p>
         </div>
       </div>
-
-      <div class="edu-item">
-        <!-- TODO: agregá tu educación real -->
-        <span class="edu-year">20XX — 20XX</span>
-        <div>
-          <p class="edu-title">Tu título o carrera</p>
-          <p class="edu-institution">Tu institución</p>
-        </div>
-      </div>
-
     </div>
   </section>
 
@@ -226,21 +192,20 @@ Disfruto especialmente enfrentar problemas, entender cómo funcionan los sistema
       ¿Tenés una oportunidad o proyecto interesante? Escribime.
     </p>
     <div class="contact-links">
-      <!-- TODO: reemplazá los href con tus links reales -->
       <a href="mailto:pablodemelo14@gmail.com" class="contact-link">
-        <span class="contact-icon">✉</span> tu@email.com
+        <span class="contact-icon">✉</span> pablodemelo14@gmail.com
       </a>
-      <a href="https://github.com/pablodemelo1" class="contact-link" target="_blank">
+      <a href="https://github.com/pablodemelo1" class="contact-link" target="_blank" rel="noopener noreferrer">
         <span class="contact-icon">⌥</span> GitHub
       </a>
-      <a href="https://linkedin.com/in/pablo-de-melo-69124b225/" class="contact-link" target="_blank">
+      <a href="https://linkedin.com/in/pablo-de-melo-69124b225/" class="contact-link" target="_blank" rel="noopener noreferrer">
         <span class="contact-icon">◈</span> LinkedIn
       </a>
     </div>
   </section>
 
   <footer>
-    Hecho con Git, GitHub Pages y mucho <span>☕</span> — <span>Pablo de Melo</span>
+    Hecho con HTML, CSS y JavaScript — <span>Pablo de Melo</span>
   </footer>
 
 
